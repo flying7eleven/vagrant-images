@@ -1,6 +1,7 @@
 Vagrant Images
 ==============
-This repository just holds vagrant base images for some projects.
+This repository just holds vagrant base images for some projects. Additionally, there is also a Vagrant
+configuration file to use these boxes on your computers.
 
 Debian Jessie
 -------------
