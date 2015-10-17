@@ -3,6 +3,12 @@ Vagrant Images
 This repository just holds vagrant base images for some projects. Additionally, there is also a Vagrant
 configuration file to use these boxes on your computers.
 
+Requirements
+------------
+```
+vagrant plugin install vagrant-vbguest
+```
+
 Debian Jessie
 -------------
 - Download: https://github.com/thuetz/vagrant-images/releases/download/v20151017/debian-8.1.0-amd64.box
