@@ -46,7 +46,7 @@ Vagrant.configure("2") do |config|
     arch.vm.box_url = "http://vagrant.srijn.net/archlinux-x64-2014-01-07.box"
     arch.vm.box_download_checksum_type = "sha1"
     arch.vm.box_download_checksum = "9b0ce824f1d933371ecdda0e4c6459c42a6c972e"
-    arch.vbguest.auto_update = true
+    arch.vbguest.auto_update = false
   end
 
 end
