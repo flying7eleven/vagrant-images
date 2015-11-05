@@ -38,4 +38,15 @@ Vagrant.configure("2") do |config|
     jessie.vm.network "forwarded_port", guest: 443, host: 10443
   end
 
+  #####################
+  # Arch Linux        #
+  #####################
+  config.vm.define "archlinux" do |arch|
+    arch.vm.box = "arch"
+    arch.vm.box_url = "http://vagrant.srijn.net/archlinux-x64-2014-01-07.box"
+    arch.vm.box_download_checksum_type = "sha1"
+    arch.vm.box_download_checksum = "cee9890663794aff22dacfaea90fbfd3"
+    arch.vbguest.auto_update = true
+  end
+
 end
