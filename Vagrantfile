@@ -36,6 +36,7 @@ Vagrant.configure("2") do |config|
     jessie.vbguest.auto_update = true
     jessie.vm.network "forwarded_port", guest: 80, host: 10080
     jessie.vm.network "forwarded_port", guest: 443, host: 10443
+    jessie.vm.network "private_network", ip: "10.0.0.10"
   end
 
   #####################
@@ -47,6 +48,7 @@ Vagrant.configure("2") do |config|
     arch.vm.box_download_checksum_type = "sha1"
     arch.vm.box_download_checksum = "9b0ce824f1d933371ecdda0e4c6459c42a6c972e"
     arch.vbguest.auto_update = false
+    arch.vm.network "private_network", ip: "10.0.0.20"
   end
 
 end
